@@ -1,0 +1,130 @@
+
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    background-color:crimson;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    /* footer support */
+    margin:7em auto;
+  }
+  
+  button {
+    border:2px solid black;
+    color:black;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+   
+  }
+  
+  /* MAIN */
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  .calculator {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    background-color:gray;
+  }
+  
+  .screen {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color:black;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .screen-last {
+    min-height: 32px;
+    font-size: 20px;
+  }
+  
+  .screen-current {
+    min-height: 64px;
+    font-size: 20px;
+  }
+  
+  .buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .span-2 {
+    grid-column: span 2;
+  }
+  
+  .btn {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:gray;
+    font-size: 20px;
+  }
+  
+  .btn:hover {
+    background-color:aqua;
+  }
+  
+  .btn:active {
+    background-color:red;
+  }
+  
+  
+  .btn-red:hover {
+    background-color:blue;
+  }
+  
+  .btn-red:active {
+    background-color: var(--btn-red-active);
+  }
+  
+  .btn-blue:hover {
+    background-color:red;
+  }
+  
+  .btn-blue:active {
+    background-color: var(--btn-blue-active);
+  }
+  
+  /* Disables input spinners in calc screen */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  #equalsBtn:hover{
+    background-color: green;
+
+  }
+  
+  
